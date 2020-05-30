@@ -3,7 +3,6 @@ def merge(pierrestri):
     pierrestri.sort()
 
     while len(pierrestri) > 1:
-
         i = 1
 
         if pierrestri[0] == pierrestri[len(pierrestri) - 1]:
@@ -25,7 +24,6 @@ def merge(pierrestri):
             final.append(valeur)
 
     final.append(pierrestri[0])
-
     return final
 
 
