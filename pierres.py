@@ -2,6 +2,9 @@ def merge(pierrestri):
     final = []
     pierrestri.sort()
 
+    if len(pierrestri) == 0:
+        return "La liste entrée est vide."
+
     while len(pierrestri) > 1:
         i = 1
 
@@ -27,6 +30,7 @@ def merge(pierrestri):
     return final
 
 
+# pierres = []
 pierres = [1, 2, 3, 5, 1, 1, 1, 2, 5, 2]
 res = merge(pierres)
 print(res)
