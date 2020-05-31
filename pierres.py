@@ -30,7 +30,8 @@ def merge(pierrestri):
     return final
 
 
-# pierres = []
-pierres = [1, 2, 3, 5, 1, 1, 1, 2, 5, 2]
+pierres = input("Veuilez entrer une liste de nombres entiers séparée par des virgules.")
+pierres = pierres.split(',')
+pierres = list(map(int, pierres))
 res = merge(pierres)
 print(res)
